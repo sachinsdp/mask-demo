@@ -1,0 +1,265 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>masks</title>
+  <!--img src="{% static 'mainapp/images/cover.jpg' %}" alt="Cover Image" width="300"/-->
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      max-width: 700px;
+    }
+    .content h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .content p {
+      font-size: 1.2rem;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #333;
+      padding: 10px 20px;
+      
+    }
+
+    .navbar {
+      
+      font-size: 24px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .logo {
+      width: 150px;
+      background-repeat: no-repeat;
+      background-color: aliceblue;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar li {
+      margin-left: 20px;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+
+    .navbar a:hover {
+      color: #ffcc00;
+    }
+
+    .input-group {
+      display:flex;
+      justify-content: center;
+      align-items:normal;
+      background-color:bisque;
+      padding-top: 50px;
+
+    }
+
+    input[type="text"] {
+      padding: 10px 15px;
+      border: 2px solid #a79e9e;
+      border-radius: 25px 25px 25px 25px;
+      outline: none;
+      font-size: 16px;
+      width: 550px;
+    }
+
+    .button1 {
+      
+      border: none;
+      background-color: #00aef8;
+      color: white;
+      font-size: 16px;
+      border-radius: 25px 25px 25px 25px;
+      height: 36px;
+      width: 40px;
+      margin-left: -44px;
+      align-self: center;
+      background-image: url("{% static 'mainapp/images/search.svg' %}");
+      background-size: 20px;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      
+    }
+
+    .button1:hover {
+      background-color: rgb(164, 83, 17);
+    }
+
+    .button2 {
+      
+      border: none;
+      background-color: #00aef8;
+      color: white;
+      font-size: 16px;
+      border-radius: 25px 25px 25px 25px;
+      height: 40px;
+      width: 180px;
+      align-self: center;
+      box-shadow:0cap;
+    }
+
+    .button2:hover {
+      background-color: rgb(164, 83, 17);
+    }
+
+    .searchbar {
+      display:flex;
+      justify-content: center;
+      align-items:normal;
+      background-color:bisque;
+      padding-top: 20px;
+      width: 100%;
+      box-shadow: brown;
+    }
+
+    .top1 {
+      padding-top: 20px;
+      background-color: bisque;
+      padding-bottom: 40px;
+    }
+
+    .out1 {
+
+      padding-top: 50px;
+      padding-bottom: 50px;
+      padding-left: 150px;
+      padding-right: 150px;
+      min-height: 700px;
+      min-width: 500px;
+      justify-items: center;
+      background-image: url("{% static 'mainapp/images/logo1.png' %}");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 400px;
+      
+ 
+    
+    }
+
+
+    .footer1 {
+      background-color: rgb(215, 93, 6);
+      width: 100%;
+      align-self: center;
+      justify-content: center;
+      justify-items: center;
+      font-style: bold;
+      color: aliceblue;
+      padding-top: 5px;
+      padding-bottom: 5px; ;
+      
+
+    }
+    .output-box {
+      width: 90%;
+      height: 500px;
+      margin: 40px auto;
+      padding: 15px;
+      border: 2px solid #202020;
+      border-radius: 8px;
+      overflow-y: scroll;
+      line-height: 1.6;
+      
+    }
+
+  </style>
+
+    <script>
+        function focusOnDiv() {
+            localStorage.setItem('focusDiv', 'true');
+        }
+
+        window.onload = function() {
+            if (localStorage.getItem('focusDiv') === 'true') {
+                document.getElementById('sac').focus();
+                localStorage.removeItem('focusDiv');
+            }
+        }
+  </script>
+
+</head>
+<body>
+
+
+  <nav class="navbar">
+    <!--a href="www.manipal.edu" class="logo"></a-->
+    <img class="logo" src="{% static 'mainapp/images/mahelogo1-removebg-preview.png' %}">
+    <ul>
+      <li><a href="{% url 'get_user_info' %}">Keywords</a></li>
+      <li><a href="{% url 'help' %}">help</a></li>
+
+    </ul>
+  </nav>
+
+
+  <section>
+    <img style="width: 100%;" src="{% static 'mainapp/images/bg.png' %}" alt="Hero Image">
+  </section>
+
+
+<form method="post" action="" id="myForm" onsubmit="focusOnDiv()">
+{% csrf_token %}
+  <div class="top1">
+
+    <div class="searchbar">
+    <input type="text" placeholder="Enter your keywords" name="user_keyword" value="{{ usr }}">
+    <button class="button1" type="submit" name="button1"></button>
+  </div>
+  <div class="searchbar">
+    <button type="submit" name="button2" class="button2">Advanced Search</button>
+  </div>
+</div>  
+
+</form>
+
+
+
+<div class="out1">
+  <h3 style="color:brown;">Keyword search results</h3>
+  <div id="sac" name="sac" class="output-box" tabindex="-1">
+            <h4 style="color:red">{{ err }} {{ msg|safe }}</h4>
+            {% for x in data %}
+            {{ x|safe }}
+            {% endfor %}
+  </div>
+
+</div>
+
+<div class="footer1">
+  <h4>Manipal Application for SDG Keyword Solution</h4>
+  <p style="font-size: 10px; text-shadow: #000000; justify-self: right;">
+    Designed and Developed by Sachin Shet, <a href="mailto:shet.sachin@manipal.edu">shet.sachin@manipal.edu</a>
+  </p>
+</div>
+
+  </body>
+
+
+
+

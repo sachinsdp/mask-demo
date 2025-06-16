@@ -1,0 +1,422 @@
+test 01
+test 25
+aboriginal
+access 
+access to finance 
+access to new technology 
+access to sanitation facility 
+access to credit
+access to food
+access to land
+access to market
+access to ownership
+access to water
+adaptation 
+adaptative capacity 
+adequate social welfare
+afdc
+Africa
+African
+against poverty
+agricultural finance
+aid to family 
+Aid to Families with Dependent Children
+alleviate poverty
+alleviating poverty
+anti poverty
+antipoverty
+Asia
+Asian
+assessing social vulnerability
+asset poor family 
+asset poor household 
+asset poverty
+assetpoor family 
+assetpoor household 
+auction
+basic service
+biomass
+Black economic empowerment
+breast cancer
+cattle
+climate change
+community banking model
+community vulnerability assessment
+credit
+crises
+crisis
+cycle of poverty
+DC pension
+defined contribution pension
+definedcontribution pension
+dental care
+determinant of poverty
+determinants of poverty
+developing country 
+developing countries
+Development strategy 
+development aid
+diabetic patient 
+diagnosis
+disability 
+disability policy 
+disabled people
+disadvantaged family 
+disaster 
+disasters 
+discrimination
+distribution 
+drought 
+earning 
+earnings inequity 
+earthquake 
+economic
+economic disaster 
+economic inequality 
+economic inequity 
+economic resource 
+economic vote 
+economic crisis
+economic empowerment
+economic independence
+economic marginalisation
+economic marginalization
+economic status
+economic stress
+elderly poverty
+electric vehicle 
+electricity
+emergency savings
+emissions allowance market 
+employment
+energy poverty
+equality
+Equality of opportunity 
+equitable
+equity
+eradicate poverty
+ethnic 
+extreme rainfall 
+extreme weather 
+extreme poverty
+Family policy 
+family planning
+fertiliser
+fertility
+financial disaster 
+financial fragility 
+financial insecurity 
+financial service 
+financial barriers
+financial crisis
+financial exclusion
+financial inclusion
+financing
+flood
+floods
+food bank
+food banks
+food insecurity
+foreign aid
+fuel poverty
+funded pension
+game theoric
+game theory
+gender
+gender inequity 
+gender relation 
+gender wage
+ghetto 
+ghettos
+Gini coefficient
+government plan 
+government spending on social protection
+grameen bank
+hazards
+health care
+health care for the poor
+health care reform
+health insurance
+health insurance 
+health security
+high technology
+hightechnology
+home ownership
+homeless
+homelessness
+houseownership
+humanitarian assist 
+humanitarian aid
+hurricane 
+income
+income disparity 
+income distribution 
+income equality 
+income inequality 
+income inequity 
+income ratio 
+income redistribution 
+income insurance
+income poverty
+income protection
+income stratification
+India
+indigenous
+industrial disaster
+inequity 
+inequal 
+inequality 
+inequality
+infrastructure
+insurance
+Intellectual property right 
+international mobili 
+international aid
+international cooperation
+international development
+international program
+international support
+internet service
+jobless
+karma value 
+Korea
+land alienation
+land redistribution
+land restitution
+land rights
+landholding
+landslide 
+least developed country 
+library 
+living standard
+Lorenz curve
+Lorenz dominance
+low socioeconomic population 
+low income
+low income people
+lowest socioeconomic status
+lowincome
+marginalise 
+marginalisation
+marginalize 
+marginalization
+market access
+medicaid
+medicaid for the poor
+medical service 
+micro credit 
+micro finance 
+micro lending
+microcredit 
+microfinance 
+microlending
+migrant
+migrant 
+minimum wage
+minorities
+motorway interchange
+multilateral trading 
+National park
+National parks
+native people
+native women
+natural disaster 
+natural hazard 
+natural resource 
+natural disaster
+Nepal
+network welfare
+networkwelfare
+NGOs
+old age pension
+old people
+oldage pension
+older people
+outer space
+outerspace
+ownership
+ownership 
+parental leave
+passing intersection 
+pay as you go pension
+payasyougo pension
+payg
+pension plan
+pension reform
+pension system
+permanent income
+Personal Responsibility and Work Opportunity Reconciliation Act
+policy 
+policies
+policy
+polymorphic enzyme
+poor
+poor community 
+poor family 
+poor household 
+poor village 
+poor household
+poor income
+poor people
+poor producer
+poor village
+poorer people
+poorest
+poverty
+poverty intervention 
+poverty rate 
+poverty reducing policy 
+poverty trend 
+poverty alleviation
+poverty eradication
+poverty indicator
+poverty line
+poverty reduction
+poverty risk
+povertyreducing policy 
+power flow control
+preparedness
+preparedness to crisis
+private pension
+pro poor
+program
+program 
+proletariat
+property right 
+property rights
+propertyrights
+propoor
+provision
+provision of drinking water
+prwora
+public assistance
+public pension
+quality education
+racial
+racial inequality 
+racial bias
+racism
+real estate
+reconstruction
+recovery
+redistribution 
+refugee
+refugee 
+resilient 
+resilience
+resilience of the poor
+resiliency
+resource poor farmer
+resourcepoor farmer
+retirement pension
+retrenchment
+right to inherit 
+right to land
+rights
+rights to land
+rights to inherit 
+risk of poverty
+road safety
+rural
+rural community 
+rural bank
+rural banks
+rural finance
+rural people
+rural poor
+safety net
+safetynet
+sanitation
+saving groups
+Schistosoma
+Schistosoma 
+schizophrenia
+segregation
+sendai framework 
+social assistance 
+social policy 
+social program 
+social right 
+social service 
+social allowance
+social assistance
+social assistance for the poor
+social care
+social care service
+social exclusion
+social insurance
+social investment
+social justice
+social policies
+social policies for the poor
+social policy
+social programs
+social programs for the poor
+social protection
+social safeguard
+social safety
+social security
+social security retirement
+Social vulnerability assessment
+Social vulnerability index
+social welfare
+SSVI
+stigmatize 
+strategies
+strategy
+tanf
+telecommunication
+temporary assistance for needy families
+temporary assistance to needy families
+the poor
+to reduce poverty
+treatment
+tsunami 
+typhoon 
+unbanked
+unemployment
+unesco
+unicef
+uninsurance rates
+uninsured
+united nations
+universal coverage
+University of Ireland
+urban dweller 
+urban poverty
+ventures
+village
+village banking
+vulnerability 
+vulnerability assessment
+vulnerability to risks
+vulnerable
+vulnerable community 
+wage
+water
+water rights
+wealth
+wealth disparity 
+wealth inequality 
+wealth distribution
+welfare
+welfare allowance 
+welfare policy 
+welfare program
+welfare reform
+welfare state
+welfare to work
+welfaretowork
+wildfire
+wildfire 
+women
+womens employment
+womens land
+women employment
+women land
+workfare
+working low income
+working poor
+working poverty
+workinglow income
+world bank
