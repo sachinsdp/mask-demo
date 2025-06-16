@@ -10,7 +10,7 @@ from django.shortcuts import render
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.template import loader
-from textblob import TextBlob
+
 from django.shortcuts import render, redirect
 from .forms import LoginForm
 
@@ -424,8 +424,8 @@ def main(request):
 
             if switch:
                 strr2 = str(kwl[i])
-                a = TextBlob(strr2)
-                strr2 = str(a.correct())
+                #a = TextBlob(strr2)
+                #strr2 = str(a.correct())
                 str3 = '<p style="color:red;">The keyword "' + str(kwl[i]) + '" might be spelled wrongly<br>' \
                 + 'Suggested words: ' + strr2 + '</p><br>'
                 strr = strr + str3
