@@ -1,29 +1,3 @@
-<!--DOCTYPE html>
-<html>
-<head>
-    <title>Magscon 2026 Feedback</title>
-</head>
-<body>
-    <h2>Feedback for Magscon - 2026</h2>
-
-    <form method="post">
-        {% csrf_token %}
-        
-        <label>Name:</label><br>
-        {{ form.name }}<br><br>
-
-        <label>Email:</label><br>
-        {{ form.email }}<br><br>
-
-        <label>Feedback:</label><br>
-        {{ form.message }}<br><br>
-
-        <button type="submit">Submit</button>
-    </form>
-
-</body>
-</html-->
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -57,6 +31,32 @@
         h3 {
             font-weight: 600;
         }
+
+        .star-rating {
+    direction: rtl;
+    display: flex;
+    justify-content: center; /* <-- THIS centers stars */
+}
+
+        .star-rating input {
+            display: none;
+        }
+
+        .star-rating label {
+            font-size: 1.6rem;
+            color: #ccc;
+            cursor: pointer;
+            margin-right: 5px;
+        }
+
+        .star-rating input:checked ~ label {
+            color: #ffc107;
+        }
+
+        .star-rating label:hover,
+        .star-rating label:hover ~ label {
+            color: #ffc107;
+        }
     </style>
 </head>
 
@@ -73,16 +73,100 @@
             <form method="post">
                 {% csrf_token %}
 
+                <!-- Name -->
                 <div class="mb-3">
                     <label class="form-label">Name</label>
                     {{ form.name }}
                 </div>
 
+                <!-- Email -->
                 <div class="mb-3">
                     <label class="form-label">Email</label>
                     {{ form.email }}
                 </div>
 
+                <!-- ⭐ Accommodation -->
+                <div class="mb-3 text-center">
+                    <label class="form-label d-block">Accommodation</label>
+                    <div class="star-rating justify-content-center">
+                        <input type="radio" name="accommodation" value="5" id="a5"><label for="a5">★</label>
+                        <input type="radio" name="accommodation" value="4" id="a4"><label for="a4">★</label>
+                        <input type="radio" name="accommodation" value="3" id="a3"><label for="a3">★</label>
+                        <input type="radio" name="accommodation" value="2" id="a2"><label for="a2">★</label>
+                        <input type="radio" name="accommodation" value="1" id="a1"><label for="a1">★</label>
+                    </div>
+                </div>
+
+                <!-- ⭐ Travel -->
+                <div class="mb-3 text-center">
+                    <label class="form-label d-block">Travel</label>
+                    <div class="star-rating justify-content-center">
+                        <input type="radio" name="travel" value="5" id="t5"><label for="t5">★</label>
+                        <input type="radio" name="travel" value="4" id="t4"><label for="t4">★</label>
+                        <input type="radio" name="travel" value="3" id="t3"><label for="t3">★</label>
+                        <input type="radio" name="travel" value="2" id="t2"><label for="t2">★</label>
+                        <input type="radio" name="travel" value="1" id="t1"><label for="t1">★</label>
+                    </div>
+                </div>     
+
+                    <!-- ⭐ Food -->
+                
+                <div class="mb-3 text-center">
+                    <label class="form-label d-block">Food</label>
+                    <div class="star-rating justify-content-center">
+                        <input type="radio" name="food" value="5" id="f5"><label for="f5">★</label>
+                        <input type="radio" name="food" value="4" id="f4"><label for="f4">★</label>
+                        <input type="radio" name="food" value="3" id="f3"><label for="f3">★</label>
+                        <input type="radio" name="food" value="2" id="f2"><label for="f2">★</label>
+                        <input type="radio" name="food" value="1" id="f1"><label for="f1">★</label>
+                    </div>
+                </div>
+
+                                <div class="mb-3 text-center">
+                    <label class="form-label d-block">Registration</label>
+                    <div class="star-rating justify-content-center">
+                        <input type="radio" name="registration" value="5" id="r5"><label for="r5">★</label>
+                        <input type="radio" name="registration" value="4" id="r4"><label for="r4">★</label>
+                        <input type="radio" name="registration" value="3" id="r3"><label for="r3">★</label>
+                        <input type="radio" name="registration" value="2" id="r2"><label for="r2">★</label>
+                        <input type="radio" name="registration" value="1" id="r1"><label for="r1">★</label>
+                    </div>
+                </div>
+                
+
+                <div class="mb-3 text-center">
+                    <label class="form-label d-block">Talks and Discussions</label>
+                    <div class="star-rating justify-content-center">
+                        <input type="radio" name="talks" value="5" id="t5"><label for="t5">★</label>
+                        <input type="radio" name="talks" value="4" id="t4"><label for="t4">★</label>
+                        <input type="radio" name="talks" value="3" id="t3"><label for="t3">★</label>
+                        <input type="radio" name="talks" value="2" id="t2"><label for="t2">★</label>
+                        <input type="radio" name="talks" value="1" id="t1"><label for="t1">★</label>
+                    </div>
+                </div>
+
+                <div class="mb-3 text-center">
+                    <label class="form-label d-block">Venue</label>
+                    <div class="star-rating justify-content-center">
+                        <input type="radio" name="venue" value="5" id="v5"><label for="v5">★</label>
+                        <input type="radio" name="venue" value="4" id="v4"><label for="v4">★</label>
+                        <input type="radio" name="venue" value="3" id="v3"><label for="v3">★</label>
+                        <input type="radio" name="venue" value="2" id="v2"><label for="v2">★</label>
+                        <input type="radio" name="venue" value="1" id="v1"><label for="v1">★</label>
+                    </div>
+                </div>
+
+                <div class="mb-3 text-center">
+                    <label class="form-label d-block">Overall Experience</label>
+                    <div class="star-rating justify-content-center">
+                        <input type="radio" name="overall" value="5" id="o5"><label for="o5">★</label>
+                        <input type="radio" name="overall" value="4" id="o4"><label for="o4">★</label>
+                        <input type="radio" name="overall" value="3" id="o3"><label for="o3">★</label>
+                        <input type="radio" name="overall" value="2" id="o2"><label for="o2">★</label>
+                        <input type="radio" name="overall" value="1" id="o1"><label for="o1">★</label>
+                    </div>
+                </div>
+                <!-- Feedback -->
                 <div class="mb-3">
                     <label class="form-label">Feedback</label>
                     {{ form.message }}

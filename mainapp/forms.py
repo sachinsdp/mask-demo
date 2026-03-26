@@ -6,18 +6,18 @@ class LoginForm(forms.Form):
     name = forms.CharField(max_length=100)
     email = forms.EmailField()
 
-
-
-from django import forms
-from .models import Feedback
-
 class FeedbackForm(forms.ModelForm):
     class Meta:
         model = Feedback
-        fields = ['name', 'email', 'message']
+        fields = [
+            'name', 'email',
+            'accommodation', 'travel', 'food', 'registration',
+            'talks_and_discussions', 'venue', 'overall_experience',
+            'message'
+        ]
 
         widgets = {
-            'name': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Enter your name'}),
-            'email': forms.EmailInput(attrs={'class': 'form-control', 'placeholder': 'Enter your email'}),
-            'message': forms.Textarea(attrs={'class': 'form-control', 'placeholder': 'Your feedback...', 'rows': 4}),
+            'name': forms.TextInput(attrs={'class': 'form-control'}),
+            'email': forms.EmailInput(attrs={'class': 'form-control'}),
+            'message': forms.Textarea(attrs={'class': 'form-control', 'rows': 3}),
         }

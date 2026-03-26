@@ -16,17 +16,39 @@ from .forms import LoginForm
 
 from django.shortcuts import render, redirect
 from .forms import FeedbackForm
+from .models import Feedback
+from django.db.models import Avg
 
 def feedback_view(request):
     if request.method == 'POST':
         form = FeedbackForm(request.POST)
         if form.is_valid():
             form.save()
-            return render(request, 'mainapp/thankyou.html')
+            return redirect('thankyou')   # ✅ correct
+        else:
+            print(form.errors)
+
     else:
         form = FeedbackForm()
 
     return render(request, 'mainapp/feedback.html', {'form': form})
+
+def thankyou_view(request):
+    return render(request, 'mainapp/thankyou.html')
+
+def dashboard(request):
+    avg = Feedback.objects.aggregate(
+        avg_accommodation=Avg('accommodation'),
+        avg_travel=Avg('travel'),
+        avg_food=Avg('food'),
+        avg_registration=Avg('registration'),
+        avg_talks_and_discussions=Avg('talks_and_discussions'),
+        avg_venue=Avg('venue'),
+        avg_overall_experience=Avg('overall_experience'),
+    )
+
+    return render(request, 'mainapp/dashboard.html', {'avg': avg})
+
 
 def get_keyword_list(user_input):
 
